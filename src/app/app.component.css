@@ -1,0 +1,35 @@
+section {
+  height: 100vh;
+  background-color: #D6CC99;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #001524;
+  padding-left: 1rem;
+  color: white;
+}
+
+.app-header > h3 {
+  margin: 0;
+}
+
+.app-nav {
+  flex-basis: 50%;
+  justify-self: flex-end;
+}
+
+.app-ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+}
+
+.link-actived {
+  padding: .3rem;
+  border-radius: 6px;
+  background-color: #445D48;
+
+}
