@@ -1,0 +1,59 @@
+<section class="add-training-section">
+
+  <form action="#" (ngSubmit)="onSubmit()" [formGroup]="trainingForm" #formDir="ngForm">
+    <header>
+      <h1> {{ mode == 'add' ? 'Criar treino' : 'Editar Treino' }}</h1>
+    </header>
+
+    <div class="form-group">
+      <label for="name">Nome:</label>
+      <input
+        matInput
+        type="text"
+        placeholder="Digite o nome do treino"
+        required
+        formControlName="name"
+      >
+      <div *ngIf="name.invalid && formDir.submitted" class="validation-error">
+        <p *ngIf="name.errors?.['required']">O nome é obrigatório!</p>
+      </div>
+
+      <label for="description">Descrição:</label>
+      <input
+        type="text"
+        placeholder="Digite a descrição do treino"
+        required
+        formControlName="description"
+      >
+      <div *ngIf="description.invalid && formDir.submitted" class="validation-error">
+        <p *ngIf="description.errors?.['required']">A descrição é obrigatória!</p>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="startDate">Data de início:</label>
+      <input
+        type="text"
+        placeholder="Informe a data de início"
+        required
+        formControlName="startDate"
+      >
+      <div *ngIf="startDate.invalid && formDir.submitted" class="validation-error">
+        <p *ngIf="startDate.errors?.['required']">A data de início é obrigatória!</p>
+      </div>
+
+      <label for="endDate">Data de fim:</label>
+      <input
+        type="text"
+        placeholder="Informe a data de fim"
+        required
+        formControlName="endDate"
+      >
+      <div *ngIf="endDate.invalid && formDir.submitted" class="validation-error">
+        <p *ngIf="endDate.errors?.['required']">A data de fim é obrigatória!</p>
+      </div>
+    </div>
+
+    <button type="submit"> {{ mode == 'add' ? 'Criar Treino' : 'Editar Treino'}}</button>
+  </form>
+</section>

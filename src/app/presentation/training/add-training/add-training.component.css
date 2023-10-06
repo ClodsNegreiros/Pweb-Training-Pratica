@@ -1,0 +1,54 @@
+.add-training-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+header > h1 {
+  text-align: center;
+}
+
+form {
+  width: 500px;
+  border-radius: 6px;
+  padding: 1rem;
+  background-color: white;
+  box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.2), 0px 8px 10px 1px rgba(0, 0, 0, 0.14), 0px 3px 14px 2px rgba(0, 0, 0, 0.12);;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: .5rem;
+}
+
+.form-group > label, input {
+  margin-bottom: .25rem;
+}
+
+.form-group > input {
+  width: 350px;
+  padding: .5rem;
+}
+
+button {
+  padding: .5rem;
+  width: 175px;
+  border-radius: 3px;
+  background-color: #445D48;
+  color: white;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #4e8f59;
+  transition: .5s all ease;
+}
+
+.validation-error {
+  color: red;
+}
