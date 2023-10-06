@@ -3,14 +3,14 @@ export class Student {
   private nome: string;
   private email: string;
   private telefone: string;
-  private treinadorId: number;
+  // private treinadorId: number;
 
   constructor(id: number, nome: string, email: string, telefone: string, treinadorId: number) {
     this.id = id;
     this.nome = nome;
     this.email = email;
     this.telefone = telefone;
-    this.treinadorId = treinadorId;
+    // this.treinadorId = treinadorId;
   }
 
   get _id(): number {
