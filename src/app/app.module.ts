@@ -1,15 +1,12 @@
-import { NgModule } from '@angular/core';
+import { HomeComponent } from './presentation/home/home.component';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app.routing';
-import { HomeComponent } from './home/home.component';
-
+import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { TrainingModule } from './training/training.module';
-import { MatTableModule } from '@angular/material/table';
-import { MatPaginatorModule } from '@angular/material/paginator';
-import { MatSortModule } from '@angular/material/sort';
+
+import { TrainingModule } from './presentation/training/training.module';
+import { AppRoutingModule } from './app.routing';
 
 @NgModule({
   declarations: [
@@ -21,9 +18,7 @@ import { MatSortModule } from '@angular/material/sort';
     AppRoutingModule,
     BrowserAnimationsModule,
     TrainingModule,
-    MatTableModule,
-    MatPaginatorModule,
-    MatSortModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
