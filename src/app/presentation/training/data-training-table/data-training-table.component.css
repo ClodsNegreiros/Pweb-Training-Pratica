@@ -1,0 +1,32 @@
+section {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 0 1rem;
+}
+
+.training-list {
+  width: 750px;
+}
+
+.actions > a {
+  color: blue;
+}
+
+.actions > .action-edit {
+  margin-right: .75rem;
+}
+
+.actions > .action-edit, .action-delete {
+  cursor: pointer;
+}
+
+.actions > .action-delete:hover {
+  color: red;
+  transition: .5s ease all;
+}
+
+.actions > .action-edit:hover {
+  color: blue;
+  transition: .5s ease all;
+}
